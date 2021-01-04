@@ -1,0 +1,43 @@
+.post {
+  margin: 20px 0;
+}
+
+.post__input > input {
+  height: 100%;
+  width: 100%;
+  outline-width: 0;
+  border: none;
+  background: transparent;
+  padding-left: 20px;
+  font-family: Poppins !important;
+  font-size: 15px;
+}
+
+.post__input {
+  width: 500px;
+  height: 50px;
+  border: 1px solid lightblue;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.post > form > button {
+  display: none;
+}
+
+.view {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.view1 {
+  display: flex;
+}
+.view2 {
+  margin-right: 10px;
+}
+
+.delete {
+  cursor: pointer;
+}
