@@ -7,15 +7,15 @@ import StartScreen from "./NewWork/StartScreen";
 import TimeManager from "./Timer/TimeManager";
 import Timer from "./Timer/Timer";
 
+import HomeScreen from "./Project/HomeScreen";
+import ViewScreenPage from "./TimerProject/ViewScreenPage";
+import ProjectManager from "./TimerProject/ProjectManager";
+
 function App() {
   return (
-    <div className="app">
+    <div>
       <div>
-        <StartScreen />
-        <InputScreen />
-        <center>
-          <TimeManager />
-        </center>
+        <ProjectManager />
       </div>
     </div>
   );
