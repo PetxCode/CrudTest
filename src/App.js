@@ -10,14 +10,25 @@ import Timer from "./Timer/Timer";
 import HomeScreen from "./Project/HomeScreen";
 import ViewScreenPage from "./TimerProject/ViewScreenPage";
 import ProjectManager from "./TimerProject/ProjectManager";
+import HomeStartPoint from "./ContextAPI/HomeStartPoint";
+import HomeDesign from "./ContextAPI/HomeDesign";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import FeedDesignPage from "./ContextAPI/FeedDesignPage";
+import HomeDesignPage from "./ContextAPI/HomeDesignPage";
+
+import AppState from "./ContextAPI/Context/AppState";
 
 function App() {
   return (
-    <div>
-      <div>
-        <ProjectManager />
-      </div>
-    </div>
+    <AppState>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={HomeDesign} />
+          <Route exact path="/home" component={HomeDesignPage} />
+          <Route exact path="/feed" component={FeedDesignPage} />
+        </Switch>
+      </Router>
+    </AppState>
   );
 }
 
